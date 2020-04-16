@@ -2,7 +2,9 @@ import sys, random
 
 print("*** ROCK, PAPER, SCISSORS ***")
 
-wins, losses, ties = 0, 0, 0 # variables to keep track of wins, losses and ties for player
+wins = 0 
+losses = 0
+ties = 0 # variables to keep track of wins, losses and ties for player
 
 while True: # main game loop
     print("You have {} wins {} ties {} losses".format(wins, losses, ties))
@@ -41,5 +43,5 @@ while True: # main game loop
         print("You win!!")
         wins += 1
     elif (player_choice == 's' and computer_pick == 'r') or (player_choice == 'r' and computer_pick == 'p') or (player_choice == 'p' and computer_pick == 's'):
-            print("You loose!!")
-            losses += 1
+        print("You loose!!")
+        losses += 1
