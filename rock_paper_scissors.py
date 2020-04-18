@@ -2,14 +2,12 @@ import sys, random
 
 print("*** ROCK, PAPER, SCISSORS ***")
 
-wins = 0 
-losses = 0
-ties = 0 # variables to keep track of wins, losses and ties for player
+wins ,losses ,ties = 0, 0, 0 # variables to keep track of wins, losses and ties for player
 
 while True: # main game loop
     print("You have {} wins {} ties {} losses".format(wins, losses, ties))
     while True:
-        print("Your choice: rock (r), paper (p), scissors (s), quit (q)")
+        print("Input your choice: rock (r), paper (p), scissors (s), quit (q)")
         player_choice = input()
         if player_choice == 'q':
             sys.exit()
