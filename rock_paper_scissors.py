@@ -10,7 +10,7 @@ Rules: 1. ROCK wins over SCISSORS
 wins ,losses ,ties = 0, 0, 0 # variables to keep track of wins, losses and ties for player
 
 while True: # main game loop
-    print("You have {} wins {} ties {} losses".format(wins, ties, losses))
+    print("You have {} win(s) {} tie(s) {} loss(es)".format(wins, ties, losses))
 
     # user input loop
     while True:
