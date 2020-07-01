@@ -6,6 +6,7 @@ wins ,losses ,ties = 0, 0, 0 # variables to keep track of wins, losses and ties 
 
 while True: # main game loop
     print("You have {} wins {} ties {} losses".format(wins, ties, losses))
+    
     while True:
         print("Input your choice: rock (r), paper (p), scissors (s), quit (q)")
         player_choice = input()
