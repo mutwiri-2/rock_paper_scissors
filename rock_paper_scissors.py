@@ -12,15 +12,18 @@ wins ,losses ,ties = 0, 0, 0 # variables to keep track of wins, losses and ties 
 while True: # main game loop
     print("You have {} wins {} ties {} losses".format(wins, ties, losses))
 
+    # user input loop
     while True:
         print("Input your choice: rock (r), paper (p), scissors (s), quit (q)")
         player_choice = input()
-        if player_choice == 'q':
-            sys.exit()
-        elif player_choice == 'r' or player_choice == 'p' or player_choice == 's':
-            break
+        if player_choice.isalpha():
+            player_choice = player_choice.lower()
+            if player_choice == 'q':
+                sys.exit()
+            elif player_choice == 'r' or player_choice == 'p' or player_choice == 's':
+                break
         else:
-            print("Please input a valid choice: 'r', 'p', 's' or 'q'")
+            print("Please input a valid choice from these: 'r', 'p', 's' or 'q'")
 
     # print player's choice
     if player_choice == 'r':
