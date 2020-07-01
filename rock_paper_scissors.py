@@ -22,6 +22,8 @@ while True: # main game loop
                 sys.exit()
             elif player_choice == 'r' or player_choice == 'p' or player_choice == 's':
                 break
+            else:
+                print("Please input a valid choice from these: 'r', 'p', 's' or 'q'")
         else:
             print("Please input a valid choice from these: 'r', 'p', 's' or 'q'")
 
