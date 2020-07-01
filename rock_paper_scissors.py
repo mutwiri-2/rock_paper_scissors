@@ -1,4 +1,4 @@
-import sys, random
+import sys, random, time
 
 print("*** ROCK, PAPER, SCISSORS ***")
 print(r'''
@@ -28,19 +28,25 @@ while True: # main game loop
     # print player's choice
     if player_choice == 'r':
         print("ROCK versus...")
+        time.sleep(1)
     elif player_choice == 'p':
         print("PAPER versus...")
+        time.sleep(1)
     elif player_choice == 's':
         print("SCISSORS versus...")
+        time.sleep(1)
 
     computer_pick = random.choice(['r','p','s']) # let the computer make a random pick
     # print computer's choice
     if computer_pick == 'r':
         print("ROCK")
+        time.sleep(1)
     elif computer_pick == 'p':
         print("PAPER")
+        time.sleep(1)
     elif computer_pick == 's':
         print("SCISSORS")
+        time.sleep(1)
 
     # compare player and computer picks
     if player_choice == computer_pick:
