@@ -48,13 +48,17 @@ while True: # main game loop
         print("SCISSORS")
         time.sleep(1)
 
-    # compare player and computer picks
+    # the game rules implementation
     if player_choice == computer_pick:
         print("It's a tie")
         ties += 1
-    elif (player_choice == 'r' and computer_pick == 's') or (player_choice == 'p' and computer_pick == 'r') or (player_choice == 's' and computer_pick == 'p'):
+    elif (player_choice == 'r' and computer_pick == 's')\
+    or (player_choice == 'p' and computer_pick == 'r')\
+    or (player_choice == 's' and computer_pick == 'p'):
         print("You win!!")
         wins += 1
-    elif (player_choice == 's' and computer_pick == 'r') or (player_choice == 'r' and computer_pick == 'p') or (player_choice == 'p' and computer_pick == 's'):
+    elif (player_choice == 's' and computer_pick == 'r')\
+    or (player_choice == 'r' and computer_pick == 'p')\
+    or (player_choice == 'p' and computer_pick == 's'):
         print("You loose!!")
         losses += 1
