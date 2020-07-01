@@ -7,7 +7,7 @@ Rules: 1. ROCK wins over SCISSORS
        3. PAPER wins over ROCK
 ''')
 
-wins ,losses ,ties = 0, 0, 0 # variables to keep track of wins, losses and ties for player
+wins ,losses ,ties = 0, 0, 0 
 
 while True: # main game loop
     print("You have {} win(s) {} tie(s) {} loss(es)".format(wins, ties, losses))
@@ -36,7 +36,7 @@ while True: # main game loop
         print("SCISSORS versus...")
         time.sleep(1)
 
-    computer_pick = random.choice(['r','p','s']) # let the computer make a random pick
+    computer_pick = random.choice(['r','p','s']) 
     # print computer's choice
     if computer_pick == 'r':
         print("ROCK")
