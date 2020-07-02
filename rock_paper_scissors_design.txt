@@ -1,0 +1,18 @@
+Design Problem statement - rock, paper, scissors
+
+Design a game that implements the classic rock, paper, scissors game with the 
+following rules:
+1. ROCK wins over SCISSORS
+2. SCISSORS wins over PAPER
+3. PAPER wins over ROCK
+
+Implementation:
+1. Keep track of wins, ties and losses (game scores)
+2. get user input
+3. print out user's move
+4. let computer make a random choice
+5. print out computer's move
+6. implement game rules and increment the game scores
+7. have a way to quit the game
+
+The game will be text-based and only use the standard i/o
